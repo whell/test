@@ -1,12 +1,14 @@
 <html>
 
-<script type="text/javascript">
+  <body>
+           <script type="text/javascript">
            const iframe = document.createElement('iframe');
             iframe.srcdoc = 'blank page';
             document.body.appendChild(iframe);
 
             let result = typeof iframe.contentWindow.chrome;
             document.write(result);
-</script>
+           </script>
+  </body>
 
 </html>
