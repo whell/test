@@ -5,28 +5,34 @@
 
 <body>
 <a href="/index.html">Back to main</a>
+  <h3> Should scrape </h3>
   <ol>
     <li>  
       embedded base64-encoded image
       <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot, base64 embedded image" />
     </li>
     <li>
-      Simple image element 
+      Simple image element, external domain
       <img src="https://picsum.photos/id/10/200/300"/>
     </li>
     <li>
-      URL to image
-      <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Anna%27s_hummingbird.jpg/1920px-Anna%27s_hummingbird.jpg">URL to image</a>
+      <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Anna%27s_hummingbird.jpg/1920px-Anna%27s_hummingbird.jpg">URL to image, external domain</a>
     </li>
-    <li>
-      URL to image
-      <a href="https://picsum.photos/id/1024/200/300">URL to image, but it is not obvious from filename</a>
-    </li>
-    
+     <li>
+      <a href="https:/test/a_bear.jpg">URL to image, this domain</a>
+    </li>   
+      <li>
+      <a href="https:/test/bear">URL to image, this domain, not obvious from filename</a>
+    </li>     
   </ol>
   
+  <h3>Should not try to scrape</h3>
   
-
+  <ol>
+    <li>
+      <a href="https://picsum.photos/id/1024/200/300">URL to image, exernal domain, but it is not obvious from filename</a>
+    </li>  
+  </ol>
 
 
   
